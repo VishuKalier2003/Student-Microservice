@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
     res.send('Hello, Node.js!');
 });
 
+app.get('/about', (req, res) => {
+    res.send('Hello, Node.js!');
+});
+
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
