@@ -10,6 +10,8 @@ const StudentSchema = new Mongoose.Schema({
     accID : {type : String},
     monCredit : {type : Number},
     monDebit : {type : Number},
-})
+});
+
+// Mongoose Schema imported...
 
 module.exports = Mongoose.model('student', StudentSchema);

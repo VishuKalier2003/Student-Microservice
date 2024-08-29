@@ -27,7 +27,9 @@ router.post('/student/add', async (req, res) => {
     }
 });
 
-router.get('/data', studentMiddleware, async (req, res) => {
+// Getting all the details of the student...
+
+router.get('/student/data', studentMiddleware, async (req, res) => {
     try {
         await connection(); // Ensure the connection is awaited...
         const data = await student.find();
