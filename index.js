@@ -1,5 +1,5 @@
 const express = require('express');
-const studentController = require('../controller/studentController');
+const studentController = require('./controller/studentController');
 const app = express();
 const port = 3000;
 
