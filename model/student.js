@@ -1,16 +1,6 @@
 const Mongoose = require("mongoose");
 
-class Student {
-
-    studentID = "";
-    accKey = "";
-
-    constructor(name, password, accNo) {
-        this.name = name;
-        this.password = password;
-        this.accNo = accNo;
-    }
-}
+// Defining the student Schema for the database...
 
 const StudentSchema = new Mongoose.Schema({
     name : {type : String, required : true},
@@ -21,3 +11,5 @@ const StudentSchema = new Mongoose.Schema({
     monCredit : {type : Number},
     monDebit : {type : Number},
 })
+
+module.exports = Mongoose.model('student', StudentSchema);

@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 
 const connection = async () => {
     try {
+        // Connecting the mongo DB server with database name mongoStudent...
         await mongoose.connect('mongodb+srv://root:root@studentdetails.a9sgi.mongodb.net/mongoStudent', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
@@ -12,5 +13,7 @@ const connection = async () => {
         throw error; // Propagate the error so that it can be handled in the calling function...
     }
 }
+
+// Export the database connection...
 
 module.exports = connection;
