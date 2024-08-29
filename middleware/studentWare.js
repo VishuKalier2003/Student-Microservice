@@ -2,8 +2,8 @@
 
 function adminSender(req, res, next) {
     // Extracting input data...
-    const admin = req.body.name;
-    const id = req.body.id;
+    const admin = req.query.name;
+    const id = req.query.id;
 
     // Checking if admin...
     if(admin === "Vishu Kalier" && id === "18082003")

@@ -31,7 +31,7 @@ router.post('/student/add', async (req, res) => {
 
 router.get('/student/data', studentMiddleware, async (req, res) => {
     try {
-        await connection(); // Ensure the connection is awaited...
+        await connection();         // Ensure the connection is awaited...
         const data = await student.find();
         res.json(data);
     } catch (error) {
