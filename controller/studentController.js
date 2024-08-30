@@ -40,4 +40,8 @@ router.get('/student/data', studentMiddleware, async (req, res) => {
     }
 });
 
+router.get('/', (req, res) => {
+    res.status(200).json({ "note" : "Hello and Welcome !!"});
+})
+
 module.exports = router;
